@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{display: grid;
+            justify-content: center;
+            align-content: center;
+            height: 100vh;
+        } */
+        .parent{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr  1fr 1fr;
+            text-align: center;
+            background-color:greenyellow;
+            width: 50vw;
+            /* justify-content: center;
+            align-content: center;
+             */
+        
+            
+        }
+        div div{
+            border: 2px solid black;
+        }
+        div div:hover{
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body style="background-color: greenyellow;">
+    <div class="parent">
+        <div style="grid-column: 1/3;">Veggies</div>
+        <div>Tamato</div>
+        <div>Potato</div>
+        <div>Onion</div>
+        <div style="grid-row: 2/4;">cost</div>
+        <div>MRP</div>
+        <div>20</div>
+        <div>30</div>
+        <div>50</div>
+        <div>RP</div>
+        <div>80</div>
+        <div>60</div>
+        <div>60</div>
+    </div>
+    
+</body>
+</html>

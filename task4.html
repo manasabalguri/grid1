@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr ;
+            width: 50vw;
+            border: 2px solid rgb(0, 0, 0);
+            padding: 2px;
+            
+        
+        }
+        div div{
+            border: 2px solid black ;
+            text-align: center;
+            background-color: aqua;
+            margin: 2px;
+            
+        }
+        .child1:hover{
+            background-color: blue;
+        }
+        .child2:hover{
+            background-color: blueviolet;
+        }
+
+
+
+
+    </style>
+</head>
+<body style="background-color:aquamarine">
+    <div class="parent">
+        <div style="grid-column: 1/4;" class="child1">header</div>
+        <div style="grid-column: 1/4;" class="child2">nav</div>
+        <div class="child1">section</div>
+        <div style="grid-column: 2/4; grid-row: 3/5;" class="child2">aside</div>
+        <div class="child1 ">article</div>
+        <div  class="child2"     style="grid-column: 1/4;">Footer</div>
+    </div>
+    
+</body>
+</html>
